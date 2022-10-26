@@ -32,9 +32,14 @@ public class SnakeAndLadder {
                     startPosition = startPosition - dieRoll;
                     System.out.println("player moves " + dieRoll + " steps backward");
                 }
-                
 
 
+
+            }
+
+            if (startPosition>finish)
+            {
+                startPosition=finish-dieRoll;
             }
 
 
